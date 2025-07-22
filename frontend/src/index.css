@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import "tailwindcss";
+
+*{
+    font-family: Outfit;
+}
+@theme {
+    --font-display: "Satoshi", "sans-serif";
+    --breakpoint-3xl: 1920px;
+    --color-primary: #3a506b;
+    
+    /* Custom Grid Template Columns */
+    --grid-cols-auto-fill:repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.active hr {
+    @apply block;
+}
+
+::-webkit-scrollbar {
+    @apply hidden;
+}
+
+@media(max-width:740px){
+    .active p{
+        @apply text-white bg-primary
+    }
+}
